@@ -9,12 +9,14 @@
   <!-- 
     - favicon
   -->
-  <link rel="shortcut icon" href="./favicon.svg" type="image">
+  <link rel="shortcut icon" href="./favicon.ico" type="image">
 
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
 
   <!-- 
     - google font link
@@ -35,6 +37,7 @@
     - #HEADER
   -->
 
+
   <header class="header" data-header>
     <div class="container">
 
@@ -46,33 +49,35 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
+          </li>
+
+          <!-- <li>
+            <a href="#sell" class="navbar-link" data-nav-link>Buy</a>
+          </li> -->
+
+          <li>
+            <a href="#sell" class="navbar-link" data-nav-link>Buy & Sell</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Buy</a>
+            <a href="#listing" class="navbar-link" data-nav-link>Listing</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Sell</a>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
+          </li>
+          
+          <li>
+            <a href="#aboutus" class="navbar-link" data-nav-link>About Us</a>
           </li>
 
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Listing</a>
-          </li>
 
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>About Us</a>
-          </li>
-
-          <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact</a>
-          </li>
 
         </ul>
       </nav>
 
-      <a href="#" class="btn btn-secondary">Signup</a>
+      <a href="#" class="btn btn-secondary sign-up">Signup</a>
 
       <button class="nav-toggle-btn" aria-label="Toggle menu" data-nav-toggler>
         <ion-icon name="menu-outline" aria-hidden="true" class="menu-icon"></ion-icon>
@@ -89,7 +94,7 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="hero">
+      <section id="home" class="section hero" aria-label="hero"  >
         <div class="container">
 
           <div class="hero-bg">
@@ -106,7 +111,7 @@
             </div>
           </div>
 
-          <div class="hero-form-wrapper">
+          <div id="sell" class="hero-form-wrapper" >
             <div class="form-tab">
 
               <button class="tab-btn active" data-tab-btn>Buy</button>
@@ -185,8 +190,8 @@
 
 
       <!-- about section -->
-      <section class="section about" aria-label="about">
-        <div class="container">
+      <section class="section about" aria-label="about" >
+        <div class="container" >
 
           <div class="about-banner img-holder">
             <!-- <img src="./assets/images/about-banner.jpg" width="600" height="700" loading="lazy" alt="about banner"
@@ -200,7 +205,7 @@
             </button> -->
           </div>
 
-          <div class="about-content">
+          <div class="about-content"  data-aos="fade-left">
 
             <h2 class="h2 section-title">Efficiency. Transparency. Control.</h2>
 
@@ -221,7 +226,7 @@
       <!-- service -->
 
       <div id="services">
-        <div class="container">
+        <div class="container" data-aos="fade-up">
           <h1 style="color: black; text-align: center;" class="sub-title">Our Services </h1>
           <div class="services-list">
             <div>
@@ -258,7 +263,7 @@
 
 
 
-        <section class="section property" aria-label="property">
+        <section id="listing" class="section property" aria-label="property">
           <div class="container">
 
             <h2 class="h2 section-title">Featured Properties</h2>
@@ -270,10 +275,10 @@
             <ul class="property-list">
 
               <li>
-                <div class="property-card">
+                <div class="property-card" data-aos="zoom-in">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-5.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-5.jpg" width="800" height="533" loading="lazy"
                       alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
                   </figure>
 
@@ -323,11 +328,11 @@
                 </div>
               </li>
 
-              <li>
-                <div class="property-card">
+              <li >
+                <div  class="property-card" data-aos="zoom-in">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-6.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-6.jpg" width="800" height="533" loading="lazy"
                       alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
                   </figure>
 
@@ -377,10 +382,10 @@
               </li>
 
               <li>
-                <div class="property-card">
+                <div class="property-card" data-aos="zoom-in">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-4.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-4.jpg" width="800" height="533" loading="lazy"
                       alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
                   </figure>
 
@@ -430,10 +435,10 @@
               </li>
 
               <li>
-                <div class="property-card">
+                <div class="property-card" data-aos="zoom-in">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-3.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-3.jpg" width="800" height="533" loading="lazy"
                       alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, USA" class="img-cover">
                   </figure>
 
@@ -483,10 +488,10 @@
               </li>
 
               <li>
-                <div class="property-card">
+                <div class="property-card" data-aos="zoom-in">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-1.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-1.jpg" width="800" height="533" loading="lazy"
                       alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
                   </figure>
 
@@ -535,10 +540,10 @@
               </li>
 
               <li>
-                <div class="property-card">
+                <div class="property-card" data-aos="zoom-in">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-2.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-2.jpg" width="800" height="533" loading="lazy"
                       alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, USA" class="img-cover">
                   </figure>
 
@@ -622,8 +627,8 @@
         - #CONTACT
       -->
 
-        <section class="section contact" aria-label="contact">
-          <div class="container">
+        <section id="contact" class="section contact" aria-label="contact">
+          <div class="container" data-aos="zoom-out">
 
             <h2 class="h2 section-title">Have Question ? Get in touch!</h2>
 
@@ -671,7 +676,7 @@
     - #FOOTER
   -->
 
-        <footer class="footer">
+        <footer id="aboutus" class="footer">
 
           <div class="footer-top">
             <div class="container">
@@ -870,7 +875,11 @@
         <!-- 
     - custom js link
   -->
-        <script src="./assets/js/script.js"></script>
+        <script src="./script.js"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
 
         <!-- 
     - ionicon link
@@ -880,3 +889,14 @@
 </body>
 
 </html>
+
+<!-- no assets folder in this project but still used in the linking of css and js files -->
+<!-- images location -> fixed -->
+<!-- favicon updated -->
+<!-- nav bar not working -> fixed -->
+<!-- nav bar improved and modified -->
+<!-- button hover animation smooth -->
+<!-- button hover font colour fixed -->
+<!-- now the favourite button actually works -->
+<!-- Animation on Scroll added to basic components  -->
+<!-- signup button now shows alert -->

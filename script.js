@@ -25,6 +25,12 @@ const addEventOnElement = function (element, type, listener) {
 const navbar = document.querySelector("[data-navbar]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const navToggler = document.querySelector("[data-nav-toggler]");
+const favo = document.querySelectorAll(".card-action-btn");
+const jugaad = document.querySelector(".sign-up");
+
+jugaad.addEventListener("click", function () {
+  alert("Database doesn't exist yet");
+});
 
 const toggleNav = function () {
   navbar.classList.toggle("active");
@@ -49,6 +55,17 @@ addEventOnElement(navLinks, "click", closeNav);
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
+
+
+for (let i = 0; i < favo.length; i++) {
+  favo[i].addEventListener("click", function () {
+    if (favo[i].style.color === "red") {
+      favo[i].style.color = ""; // Revert to the original color
+    } else {
+      favo[i].style.color = "red";
+    }
+  });
+}
 
 window.addEventListener("scroll", function () {
   if (window.scrollY >= 0) {
