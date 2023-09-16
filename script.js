@@ -26,6 +26,11 @@ const navbar = document.querySelector("[data-navbar]");
 const navLinks = document.querySelectorAll("[data-nav-link]");
 const navToggler = document.querySelector("[data-nav-toggler]");
 const favo = document.querySelectorAll(".card-action-btn");
+const jugaad = document.querySelector(".sign-up");
+
+jugaad.addEventListener("click", function () {
+  alert("Database doesn't exist yet");
+});
 
 const toggleNav = function () {
   navbar.classList.toggle("active");
