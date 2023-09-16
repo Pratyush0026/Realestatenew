@@ -461,7 +461,7 @@ body {
   top: 20px;
   right: 20px;
   background-color: white;
-  color: red;
+  color: rgb(112, 112, 112);
   padding: 12px;
   border-radius: 50px;
 }
