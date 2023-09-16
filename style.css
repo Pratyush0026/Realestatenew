@@ -101,9 +101,10 @@ body {
   font-weight: 500;
   max-width: max-content;
   padding:  12px 28px;
+  transition: all 0.25s ease;
 }
 
-.btn:is(:hover, :focus) { background-color: rgb(31, 239, 31); }
+.btn:is(:hover, :focus) { background-color: rgb(31, 239, 31); color:black; }
 
 .btn-secondary { border-radius: 50px; }
 
@@ -227,6 +228,7 @@ body {
     font-weight: 500;
     letter-spacing: 1px;
     padding: 12px 25px;
+    transition: all 0.25s ease;
   }
   
   .navbar-link:is(:hover, :focus) { color: rgb(33, 227, 33); }
@@ -300,6 +302,7 @@ body {
   font-weight: 500;
   border-radius: 6px;
   transition: 0.25 ease;
+  transition: all 0.25s ease;
 }
 
 .tab-btn:is(:hover, :focus) { color: purple; }
@@ -420,6 +423,7 @@ body {
   font-size: 12px;
   margin-top: 20px;
   display: inline-block;
+  transition: all 0.25s ease;
 }
 .services-list div:hover{
   background: rgb(189, 25, 189);
