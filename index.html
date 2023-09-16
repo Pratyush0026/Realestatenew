@@ -14,7 +14,7 @@
   <!-- 
     - custom css link
   -->
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./style.css">
 
   <!-- 
     - google font link
@@ -46,27 +46,27 @@
         <ul class="navbar-list">
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Home</a>
+            <a href="#home" class="navbar-link" data-nav-link>Home</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Buy</a>
+            <a href="#sell" class="navbar-link" data-nav-link>Buy</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Sell</a>
+            <a href="#sell" class="navbar-link" data-nav-link>Sell</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Listing</a>
+            <a href="#listing" class="navbar-link" data-nav-link>Listing</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>About Us</a>
+            <a href="#aboutus" class="navbar-link" data-nav-link>About Us</a>
           </li>
 
           <li>
-            <a href="#" class="navbar-link" data-nav-link>Contact</a>
+            <a href="#contact" class="navbar-link" data-nav-link>Contact</a>
           </li>
 
         </ul>
@@ -89,7 +89,7 @@
         - #HERO
       -->
 
-      <section class="section hero" aria-label="hero">
+      <section id="home" class="section hero" aria-label="hero">
         <div class="container">
 
           <div class="hero-bg">
@@ -106,7 +106,7 @@
             </div>
           </div>
 
-          <div class="hero-form-wrapper">
+          <div id="sell" class="hero-form-wrapper">
             <div class="form-tab">
 
               <button class="tab-btn active" data-tab-btn>Buy</button>
@@ -258,7 +258,7 @@
 
 
 
-        <section class="section property" aria-label="property">
+        <section id="listing" class="section property" aria-label="property">
           <div class="container">
 
             <h2 class="h2 section-title">Featured Properties</h2>
@@ -273,7 +273,7 @@
                 <div class="property-card">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-5.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-5.jpg" width="800" height="533" loading="lazy"
                       alt="10765 Hillshire Ave, Baton Rouge, LA 70810, USA" class="img-cover">
                   </figure>
 
@@ -323,11 +323,11 @@
                 </div>
               </li>
 
-              <li>
-                <div class="property-card">
+              <li >
+                <div  class="property-card">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-6.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-6.jpg" width="800" height="533" loading="lazy"
                       alt="59345 STONEWALL DR, Plaquemine, LA 70764, USA" class="img-cover">
                   </figure>
 
@@ -380,7 +380,7 @@
                 <div class="property-card">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-4.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-4.jpg" width="800" height="533" loading="lazy"
                       alt="3723 SANDBAR DR, Addis, LA 70710, USA" class="img-cover">
                   </figure>
 
@@ -433,7 +433,7 @@
                 <div class="property-card">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-3.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-3.jpg" width="800" height="533" loading="lazy"
                       alt="LOT 21 ROYAL OAK DR, Prairieville, LA 70769, USA" class="img-cover">
                   </figure>
 
@@ -486,7 +486,7 @@
                 <div class="property-card">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-1.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-1.jpg" width="800" height="533" loading="lazy"
                       alt="710 BOYD DR, Unit #1102, Baton Rouge, LA 70808, USA" class="img-cover">
                   </figure>
 
@@ -538,7 +538,7 @@
                 <div class="property-card">
 
                   <figure class="card-banner img-holder" style="--width: 800; --height: 533;">
-                    <img src="./assets/images/property-2.jpg" width="800" height="533" loading="lazy"
+                    <img src="./property-2.jpg" width="800" height="533" loading="lazy"
                       alt="5133 MCLAIN WAY, Baton Rouge, LA 70809, USA" class="img-cover">
                   </figure>
 
@@ -622,7 +622,7 @@
         - #CONTACT
       -->
 
-        <section class="section contact" aria-label="contact">
+        <section id="contact" class="section contact" aria-label="contact">
           <div class="container">
 
             <h2 class="h2 section-title">Have Question ? Get in touch!</h2>
@@ -671,7 +671,7 @@
     - #FOOTER
   -->
 
-        <footer class="footer">
+        <footer id="aboutus" class="footer">
 
           <div class="footer-top">
             <div class="container">
@@ -870,7 +870,7 @@
         <!-- 
     - custom js link
   -->
-        <script src="./assets/js/script.js"></script>
+        <script src="./script.js"></script>
 
         <!-- 
     - ionicon link
@@ -880,3 +880,8 @@
 </body>
 
 </html>
+
+<!-- no assets folder in this project but still used in the linking of css and js files -->
+<!-- images location -> fixed -->
+<!-- nav bar not working -> fixed -->
+
