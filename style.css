@@ -103,7 +103,7 @@ body {
   padding:  12px 28px;
 }
 
-.btn:is(:hover, :focus) { background-color: rgb(31, 239, 31); }
+.btn:is(:hover, :focus) { background-color: rgb(238, 86, 238); }
 
 .btn-secondary { border-radius: 50px; }
 
@@ -229,7 +229,7 @@ body {
     padding: 12px 25px;
   }
   
-  .navbar-link:is(:hover, :focus) { color: rgb(33, 227, 33); }
+  .navbar-link:is(:hover, :focus) { color: rgb(170, 203, 170); }
   
   
 
